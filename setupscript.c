@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(void){
-    char input[100], *drivers[]={
+    char input[1024], *drivers[]={
         "xf86-video-qlx",
         "xf86-video-amdgpu",
         "xf86-video-intel",
