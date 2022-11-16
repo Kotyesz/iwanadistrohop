@@ -7,12 +7,16 @@ int main(void){
         "nvidia nvidia-utils"
     };
     while(!(input[0]>0x29&&input[0]<0x34)){
+        system("clear");
         printf("VM(0), AMD(1), INTEL(2) or NVIDIA(3): ");
         scanf("%c", &input[0]); 
     }
     snprintf(input, 100, 
-    "sudo pacman -Syu xorg xorg-xinit alacritty bspwm sxhkd nitrogen picom chromium dmenu %s lxsession"
-    , drivers[0x30-input[0]]);
+    "sudo pacman -Syu zsh xorg xorg-xinit alacritty bspwm sxhkd nitrogen picom chromium dmenu %s lxsession",
+     drivers[0x30-input[0]]);
     system(input);
+
+    printf("We done bruv.\n\n");
+
     return 0;
 }
