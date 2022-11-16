@@ -6,8 +6,10 @@ int main(void){
         "xf86-video-intel",
         "nvidia nvidia-utils"
     };
-    while(input[0]<0x30||input[0]>0x33)
-        scanf("VM(0), AMD(1), INTEL(2) or NVIDIA(3): %c", &input[0]); 
+    while(!(input[0]>0x29&&input[0]<0x34)){
+        printf("VM(0), AMD(1), INTEL(2) or NVIDIA(3): ");
+        scanf("%c", &input[0]); 
+    }
     snprintf(input, 100, 
     "sudo pacman -Syu xorg xorg-xinit alacritty bspwm sxhkd nitrogen picom chromium dmenu %s lxsession"
     , drivers[0x30-input[0]]);
