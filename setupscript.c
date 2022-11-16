@@ -14,6 +14,7 @@ int main(void){
     snprintf(input, 100, 
     "sudo pacman -Syu zsh xorg xorg-xinit alacritty bspwm sxhkd nitrogen picom chromium dmenu %s lxsession",
      drivers[0x30-input[0]]);
+    printf("%s", input);
     system(input);
 
     printf("We done bruv.\n\n");
