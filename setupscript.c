@@ -14,8 +14,8 @@ int main(void){
     snprintf(input, 100, 
     "sudo pacman -Syu zsh xorg xorg-xinit alacritty bspwm sxhkd nitrogen picom chromium dmenu %s lxsession",
      drivers[0x30-input[0]]);
-    printf("%s\nPress any keys to continue...", input);
-    getchar();
+    printf("\n%s\n\n", input);
+    system("sleep(5)");
     system(input);
 
     printf("We done bruv.\n\n");
