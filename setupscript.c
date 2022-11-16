@@ -15,7 +15,7 @@ int main(void){
     "sudo pacman -Syu zsh xorg xorg-xinit alacritty bspwm sxhkd nitrogen picom chromium dmenu %s lxsession",
      drivers[0x30-input[0]]);
     printf("\n%s\n\n", input);
-    system("sleep(5)");
+    system("sleep 5");
     system(input);
 
     printf("We done bruv.\n\n");
