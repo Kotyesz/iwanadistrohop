@@ -1,1 +1,1 @@
-gcc -o run setupscript.c
+gcc setupscript.c -o run
