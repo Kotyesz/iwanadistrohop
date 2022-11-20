@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string>
-#include<format>
 
 const std::string drivers[]={
     "xf86-video-qlx",
