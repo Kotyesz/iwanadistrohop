@@ -1,2 +1,2 @@
 run:
-	gcc setupscript.c -o run
+	g++ setupscript.c -o run
