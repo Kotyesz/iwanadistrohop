@@ -8,7 +8,7 @@ const std::string drivers[]={
     "nvidia nvidia-utils"
 };
 int main(void){
-    short choice;
+    short choice=-1;
     std::string input;
     while(choice<0||choice>3){
         system("clear");
