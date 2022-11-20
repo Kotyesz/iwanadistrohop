@@ -2,7 +2,7 @@
 #include<string>
 
 const std::string drivers[]={
-    "xf86-video-qlx",
+    "xf86-video-qxl",
     "xf86-video-amdgpu",
     "xf86-video-intel",
     "nvidia nvidia-utils"
