@@ -17,6 +17,7 @@ int main(void){
         std::cin.ignore();
     }
     input="sudo pacman -Syu zsh xorg xorg-xinit alacritty bspwm sxhkd nitrogen picom chromium dmenu "+drivers[choice]+" lxsession";
+    std::cout<<input<<std::endl;
     system("sleep 5");
     system(input.c_str());
 
