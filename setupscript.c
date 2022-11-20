@@ -14,7 +14,7 @@ int main(void){
     }
     snprintf(input, 100, 
     "sudo pacman -Syu zsh xorg xorg-xinit alacritty bspwm sxhkd nitrogen picom chromium dmenu %s lxsession",
-        choice==1?AMD:choice==2?INTEL:choice==3?NVIDIA:VM);
+        (choice==1?AMD:choice==2?INTEL:choice==3?NVIDIA:VM));
     printf("\n%s\n\n", input);
     system("sleep 5");
     system(input);
